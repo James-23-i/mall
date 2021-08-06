@@ -9,5 +9,16 @@ module.exports = {
         'views': '@/views'
       }
     }
-  }
+  },
+  // devServer: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'http://api-haoke-web.itheima.net',
+  //       changeOrigin: true,
+  //       pathRewrite: {
+  //         '^/api': ''
+  //       }
+  //     }
+  //   }
+  // }
 }

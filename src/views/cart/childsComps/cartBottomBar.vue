@@ -30,12 +30,13 @@ export default {
     },
     isSelectAll() {
       // 当cartList没有商品时，默认全选不选中
-      if(this.cartList.length === 0){
-        return false
-      } else{
-        // 查找商品未被选中的状态，再取反获得全选的状态
-        return !this.cartList.find(item => !item.check)
-      }
+      // if(this.cartList.length === 0){
+      //   return false
+      // } else{
+      //   // 查找商品未被选中的状态，再取反获得全选的状态
+      //   return !this.cartList.find(item => !item.check)
+      // }
+      return this.cartList.length ? this.cartList.every(item => item.check) : false
     }
   },
   methods: {

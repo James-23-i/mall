@@ -1,4 +1,8 @@
+
 module.exports = {
+  devServer: {
+    before: require('./mock')
+  },
   configureWebpack: {
     resolve: {
       alias: {

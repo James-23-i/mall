@@ -11,13 +11,16 @@
     "better-scroll": "^1.13.2",
     "core-js": "^3.6.5",
     "fastclick": "^1.0.6",
+    "mockjs": "^1.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "webpack-bundle-analyzer": "^4.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
+    "compression-webpack-plugin": "^8.0.1",
     "postcss-px-to-viewport": "^1.1.0",
     "vue-lazyload": "^1.2.6",
     "vue-template-compiler": "^2.6.11"

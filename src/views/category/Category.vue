@@ -38,8 +38,15 @@ export default {
   },
   created() {
     this.getCategory();
+
+    this.category();
   },
   methods: {
+    category() {
+      this.axios.get(this.baseUrl + '/category').then(res => {
+        console.log(res);
+      })
+    },
     getCategory() {
       getCategory().then((res) => {
         console.log(res);
